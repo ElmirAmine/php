@@ -98,3 +98,17 @@ function premierElementTableau($tableau) {
 echo premierElementTableau([10, 20, 30]);
 echo premierElementTableau([]) === null ? 'null' : premierElementTableau([]); 
 ?>
+function dernierElementTableau($tableau) {
+    
+    if (is_array($tableau)) {
+        
+        $dernierElement = end($tableau); 
+        
+        return $dernierElement !== false ? $dernierElement : null;
+    }
+    return null; 
+}
+
+echo dernierElementTableau([10, 20, 30]); 
+echo dernierElementTableau([]) === null ? 'null' : dernierElementTableau([]); 
+?>
